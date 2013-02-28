@@ -539,9 +539,11 @@ class Instance(TaggedEC2Object):
             * sourceDestCheck - Boolean (true)
             * groupSet - Set of Security Groups or IDs
             * ebsOptimized - Boolean (false)
+            * BlockDeviceMapping - List (set DeleteOnTermination true for all of block devices)
 
         :type value: string
         :param value: The new value for the attribute
+                      BlockDeviceMapping example: ['/dev/sdf=false']
 
         :rtype: bool
         :return: Whether the operation succeeded or not
